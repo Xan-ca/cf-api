@@ -1,7 +1,7 @@
 name: Update CF Data
 on:
   schedule:
-    - cron: '0 */12 * * *' # Runs every 12 hours
+    - cron: '0 0 * * *' # This runs exactly at 00:00 (Midnight) UTC every day
   workflow_dispatch:      # Allows you to click a button to run it manually
 
 jobs:
